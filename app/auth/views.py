@@ -6,6 +6,7 @@ from .forms import LoginForm, RegistrationForm, AddCompound, DeleteCompound, Hit
 from .. import db
 from . generate_hitlist import make_hitlist
 from flask.ext import excel
+import pyexcel.ext.xls
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -104,8 +105,8 @@ def hitlist():
         output_list = make_hitlist(db_hitlist, form.data['copies'], form.data['name'])
         print(output_list)
 
-        output = excel.make_response_from_array(output_list, 'csv')
-        output.headers["Content-Disposition"] = "attachment; filename=export.csv"
+        output = excel.make_response_from_array(output_list, 'xls')
+        output.headers["Content-Disposition"] = "attachment; filename=export.xls"
         output.headers["Content-type"] = "text/csv"
         flash("Done!")
         return output
