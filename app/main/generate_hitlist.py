@@ -101,7 +101,7 @@ def get_starting_barcode(starting_iterator, barcode):
 
 def destination_wells():
     destination_wells = []
-    with open('app/auth/destination_wells.csv', newline='') as csvfile:
+    with open('app/main/destination_wells.csv', newline='') as csvfile:
         read_source = csv.reader(csvfile, delimiter=',')
         for row in read_source:
 

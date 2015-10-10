@@ -17,19 +17,19 @@
 
                 {% endif %}
                 {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.show_compound') }}">ShowCompounds</a></li>
+                <li><a href="{{ url_for('main.show_compound') }}">ShowCompounds</a></li>
 
                 {% endif %}
                 {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.register_compound') }}">RegisterCompounds</a></li>
+                <li><a href="{{ url_for('main.register_compound') }}">RegisterCompounds</a></li>
 
                 {% endif %}
                 {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.delete_compound') }}">DeleteCompounds</a></li>
+                <li><a href="{{ url_for('main.delete_compound') }}">DeleteCompounds</a></li>
 
                 {% endif %}
                 {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.hitlist') }}">Pastehitlist</a></li>
+                <li><a href="{{ url_for('main.hitlist') }}">Pastehitlist</a></li>
 
                 {% endif %}
 </P>
