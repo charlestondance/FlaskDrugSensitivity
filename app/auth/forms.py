@@ -31,3 +31,6 @@ class RegistrationForm(Form):
         if User.query.filter_by(username=field.data).first():
             raise ValidationError('Username already in use.')
 
+class DeleteUser(Form):
+    username = StringField('User Name', validators=[Required(), Length(1, 64)])
+    submit = SubmitField('DeleteUser')

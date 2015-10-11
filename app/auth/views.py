@@ -1,5 +1,5 @@
 from flask import render_template, redirect, request, url_for, flash
-from .forms import LoginForm
+from .forms import LoginForm, RegistrationForm, DeleteUser
 from flask.ext.login import login_user, logout_user, login_required
 from . import auth
 from .. import db
@@ -41,4 +41,26 @@ def register():
 def testing():
     print('hi')
     return render_template('auth/testing.html')
+
+@auth.route('/user_management', methods=['GET'])
+@login_required
+def user_management():
+    user_list = User.query.all()
+
+    return render_template('auth/user_management.html', user_list=user_list)
+
+@auth.route('/delete_user', methods=['GET', 'POST'])
+@login_required
+def delete_user():
+    form = DeleteUser()
+
+    if form.validate_on_submit():
+        flash('Delete User')
+        user_del = User.query.filter_by(username=form.username.data).first()
+        db.session.delete(user_del)
+        db.session.commit()
+        return redirect(url_for('main.index'))
+
+    return render_template('auth/delete_user.html', form=form)
+
 

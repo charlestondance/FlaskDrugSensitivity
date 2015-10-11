@@ -32,5 +32,14 @@
                 <li><a href="{{ url_for('main.hitlist') }}">Pastehitlist</a></li>
 
                 {% endif %}
+
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('auth.user_management') }}">User Management</a></li>
+
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('auth.delete_user') }}">Delete User</a></li>
+
+                {% endif %}
 </P>
 {% endblock %}
