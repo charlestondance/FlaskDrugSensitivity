@@ -15,7 +15,7 @@ class Role(db.Model):
     @staticmethod
     def insert_roles():
         roles = {'User': ( Permission.MAKE_LIST, True),
-                 'SuperUser' : ( Permission.MAKE_LIST, Permission.EDIT_DB, False),
+                 'SuperUser' : ( Permission.MAKE_LIST | Permission.EDIT_DB, False),
                  'Administrator' : (0xFF, False)
                  }
 
@@ -60,7 +60,7 @@ class User(UserMixin, db.Model):
         return check_password_hash(self.password_hash, password)
 
     def can(self, permissions):
-        return  self.role is not None and \
+        return self.role is not None and \
                 (self.role.permissions & permissions) == permissions
 
     def is_administrator(self):

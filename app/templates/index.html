@@ -8,38 +8,19 @@
 </div>
 <P>
 
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.register') }}">Register New User</a></li>
 
-                {% endif %}
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.testing') }}">Test</a></li>
-
-                {% endif %}
                 {% if current_user.is_authenticated %}
                 <li><a href="{{ url_for('main.show_compound') }}">ShowCompounds</a></li>
-
-                {% endif %}
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('main.register_compound') }}">RegisterCompounds</a></li>
-
-                {% endif %}
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('main.delete_compound') }}">DeleteCompounds</a></li>
-
-                {% endif %}
-                {% if current_user.is_authenticated %}
                 <li><a href="{{ url_for('main.hitlist') }}">Pastehitlist</a></li>
 
                 {% endif %}
 
-                {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('auth.user_management') }}">User Management</a></li>
-
-                {% endif %}
-                {% if current_user.is_authenticated %}
+                {% if current_user.can(Permission.EDIT_DB) %}
                 <li><a href="{{ url_for('auth.delete_user') }}">Delete User</a></li>
-
+                <li><a href="{{ url_for('auth.user_management') }}">User Management</a></li>
+                <li><a href="{{ url_for('main.delete_compound') }}">DeleteCompounds</a></li>
+                <li><a href="{{ url_for('main.register_compound') }}">RegisterCompounds</a></li>
+                <li><a href="{{ url_for('auth.register') }}">Register New User</a></li>
                 {% endif %}
 </P>
 {% endblock %}

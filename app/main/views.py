@@ -1,16 +1,17 @@
 from flask import render_template,redirect, request, url_for, flash
 from . import main
-from ..models import CompoundDB
-from .forms import AddCompound, DeleteCompound, Hitlist
+from ..models import CompoundDB, User, Role, Permission
+from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm
 from .. import db
 from app.main.generate_hitlist import make_hitlist
 from flask.ext import excel
 import pyexcel.ext.xls
 from flask.ext.login import login_required, current_user
+from ..decorators import admin_required, permission_required
 
 @main.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', Permission=Permission)
 
 @main.route('/showcompound', methods=['GET'])
 @login_required
@@ -22,6 +23,7 @@ def show_compound():
 
 @main.route('/registercompound', methods=['GET', 'POST'])
 @login_required
+@permission_required(Permission.EDIT_DB)
 def register_compound():
     form = AddCompound()
     print('register_compound')
@@ -37,6 +39,7 @@ def register_compound():
 
 @main.route('/deletecompound', methods=['GET', 'POST'])
 @login_required
+@permission_required(Permission.EDIT_DB)
 def delete_compound():
     form = DeleteCompound()
     print('delete_compound')
@@ -80,3 +83,29 @@ def hitlist():
 
 
     return render_template('pastehitlist.html', form=form)
+
+@main.route('/edit-profile/<int:id>', methods=['GET', 'POST'])
+@login_required
+@admin_required
+def edit_profile_admin(id):
+    user = User.query.get_or_404(id)
+    form = EditProfileAdminForm(user=user)
+    if form.validate_on_submit():
+        user.email = form.email.data
+        user.username = form.username.data
+        user.role = Role.query.get(form.role.data)
+        db.session.add(user)
+        flash('The profile has been updated.')
+        return redirect(url_for('.user', username=user.username))
+    form.email.data = user.email
+    form.username.data = user.username
+    form.role.data = user.role_id
+    return render_template('edit_profile.html', form=form, user=user)
+
+@main.route('/user/<username>')
+@login_required
+def user(username):
+    user = User.query.filter_by(username=username).first()
+    if user is None:
+        abort(404)
+    return render_template('user.html', user=user)
