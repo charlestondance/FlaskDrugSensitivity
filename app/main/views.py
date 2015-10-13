@@ -1,7 +1,7 @@
 from flask import render_template,redirect, request, url_for, flash
 from . import main
 from ..models import CompoundDB, User, Role, Permission
-from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm
+from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound
 from .. import db
 from app.main.generate_hitlist import make_hitlist
 from flask.ext import excel
@@ -16,10 +16,13 @@ def index():
 @main.route('/showcompound', methods=['GET'])
 @login_required
 def show_compound():
-    compound = CompoundDB.query.all()
-    print(compound)
-    print('showcompound')
-    return render_template('showcompound.html', compound=compound)
+    page = request.args.get('page', 1, type=int)
+    pagination = CompoundDB.query.order_by(CompoundDB.id).paginate(page, per_page=20, error_out=False)
+    print(pagination.items)
+    compound = pagination.items
+    #compound = CompoundDB.query.all()
+
+    return render_template('showcompound.html', compound=compound, pagination=pagination)
 
 @main.route('/registercompound', methods=['GET', 'POST'])
 @login_required
@@ -109,3 +112,25 @@ def user(username):
     if user is None:
         abort(404)
     return render_template('user.html', user=user)
+
+@main.route('/editcompound/<string:batch_id>', methods=['GET', 'POST'])
+@login_required
+@permission_required(Permission.EDIT_DB)
+def edit_compound(batch_id):
+    """this will take the formatted batch id and allow the user to edit the compounds starting conc and range
+    """
+
+    compound = CompoundDB.query.filter_by(formatted_batch_id=batch_id).first()
+    form = EditCompound(compound=compound)
+    if form.validate_on_submit():
+        compound.starting_concentration = form.starting_concentration.data
+        compound.concentration_range = form.concentration_range.data
+        db.session.commit()
+        flash('Compound updated')
+        return redirect(url_for('main.index'))
+
+    #set the defaults
+    form.starting_concentration.data = compound.starting_concentration
+    form.concentration_range.data = compound.concentration_range
+
+    return render_template('edit_compound.html', form=form, compound=compound)

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky - Register Compound{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Edit Compound</h1>
+</div>
+
+<p>
+
+    <table border="1" style="width:75%">
+    <tr>
+    <th>Batch ID</th>
+    <th>Supplier</th>
+    <th>Supplier Ref</th>
+        <th>Barcode</th>
+        <th>Well Ref</th>
+
+  </tr>
+
+       <tr>
+        <td>{{ compound.formatted_batch_id }}</td> <td>{{ compound.supplier }}</td> <td>{{ compound.supplier_ref }}</td> <td>{{ compound.barcode }}</td> <td>{{ compound.well_ref }}</td>
+        </tr>
+            </p>
+    </table>
+    </div>
+</p>
+<p>
+<div class="col-md-4">
+{{ wtf.quick_form(form) }}
+</div>
+
+</p>
+
+{% endblock %}

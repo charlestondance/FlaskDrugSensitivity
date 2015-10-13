@@ -42,7 +42,7 @@ def make_hitlist(hitlist, copies, name):
             if compound[4] == "A":
                 conc_list = conc_a
             else:
-                conc_list = conc_a
+                conc_list = conc_b
 
             for volume_iterator in conc_list:
 

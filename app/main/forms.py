@@ -52,3 +52,19 @@ class EditProfileAdminForm(Form):
         if field.data != self.user.username and \
                 User.query.filter_by(username=field.data).first():
             raise ValidationError('Username already in use.')
+
+class EditCompound(Form):
+
+    starting_concentration = SelectField('Starting Plate', coerce=int)
+    concentration_range = SelectField('Concentration range', coerce=str)
+    submit = SubmitField('EditCompound')
+
+
+
+    def __init__(self, compound, *args, **kwargs):
+        super(EditCompound, self).__init__(*args, **kwargs)
+        self.concentration_range.choices = [("A", "A"), ("B", "B")]
+        self.starting_concentration.choices = [(0, 0), (1, 1), (2, 2), (3, 3)]
+
+        self.compound = compound
+
