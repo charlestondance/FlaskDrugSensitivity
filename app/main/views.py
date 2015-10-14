@@ -1,7 +1,7 @@
 from flask import render_template,redirect, request, url_for, flash
 from . import main
 from ..models import CompoundDB, User, Role, Permission
-from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound
+from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound, SearchCompound
 from .. import db
 from app.main.generate_hitlist import make_hitlist
 from flask.ext import excel
@@ -21,8 +21,21 @@ def show_compound():
     print(pagination.items)
     compound = pagination.items
     #compound = CompoundDB.query.all()
+    #return a value for the big jump for next page so long as it doesnt go over the maximum
+    page_10 = pagination.next_num+9
+    if page_10 > pagination.pages:
+        pageincrement = pagination.pages
+    else:
+        pageincrement = page_10
 
-    return render_template('showcompound.html', compound=compound, pagination=pagination)
+    #check the decrease doesnt go below 1
+    page_decrement = page - 10
+    if page_decrement < 1:
+        page_decrement = 1
+    print(page_decrement)
+
+
+    return render_template('showcompound.html', compound=compound, pagination=pagination, pageincrement=pageincrement, page_decrement=page_decrement)
 
 @main.route('/registercompound', methods=['GET', 'POST'])
 @login_required
@@ -47,13 +60,14 @@ def delete_compound():
     form = DeleteCompound()
     print('delete_compound')
     if form.validate_on_submit():
-        flash('Compound deleted')
+
         compound_del = CompoundDB.query.filter_by(formatted_batch_id=form.formatted_batch_id.data).first()
         db.session.delete(compound_del)
         db.session.commit()
+        flash('Compound deleted')
         return redirect(url_for('main.index'))
 
-    return render_template('registercompound.html', form=form)
+    return render_template('deletecompound.html', form=form)
 
 @main.route('/hitlist', methods=['GET', 'POST'])
 @login_required
@@ -98,6 +112,7 @@ def edit_profile_admin(id):
         user.username = form.username.data
         user.role = Role.query.get(form.role.data)
         db.session.add(user)
+        db.session.commit()
         flash('The profile has been updated.')
         return redirect(url_for('.user', username=user.username))
     form.email.data = user.email
@@ -120,7 +135,7 @@ def edit_compound(batch_id):
     """this will take the formatted batch id and allow the user to edit the compounds starting conc and range
     """
 
-    compound = CompoundDB.query.filter_by(formatted_batch_id=batch_id).first()
+    compound = CompoundDB.query.filter_by(formatted_batch_id=batch_id).first_or_404()
     form = EditCompound(compound=compound)
     if form.validate_on_submit():
         compound.starting_concentration = form.starting_concentration.data
@@ -130,7 +145,19 @@ def edit_compound(batch_id):
         return redirect(url_for('main.index'))
 
     #set the defaults
-    form.starting_concentration.data = compound.starting_concentration
+    form.starting_concentration.data = int(compound.starting_concentration)
     form.concentration_range.data = compound.concentration_range
 
     return render_template('edit_compound.html', form=form, compound=compound)
+
+@main.route('/searchcompound', methods=['GET', 'POST'])
+@login_required
+@permission_required(Permission.EDIT_DB)
+def search_compound():
+    """this will search the DB for the entered compound and return the edit page"""
+    form = SearchCompound()
+    if form.validate_on_submit():
+        compound = form.formatted_batch_id.data
+        return redirect(url_for('.edit_compound', batch_id = compound ))
+
+    return render_template('searchcompound.html', form=form)

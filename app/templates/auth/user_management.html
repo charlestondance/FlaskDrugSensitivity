@@ -4,13 +4,23 @@
 {% block title %}Flasky - User Management{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-    <h1>Haw</h1>
-    <p>
+
+
+<p>
+
+    <table class="table table-striped">
+    <tr>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Role ID</th>
+  </tr>
         {% for user_list in user_list %}
-        <li>{{ user_list.username }}, {{ user_list.email}}, {{ user_list.role_id }}
-        {% endfor %}
-    </p>
-</div>
+       <tr>
+        <td>{{ user_list.username }}</td> <td>{{ user_list.email }}</td> <td>{{ user_list.role_id }}</td> </tr>
+    {% endfor %}
+</p>
+    </table>
+    </div>
+</p>
 
 {% endblock %}

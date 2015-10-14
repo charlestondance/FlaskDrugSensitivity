@@ -10,16 +10,21 @@
 
 
                 {% if current_user.is_authenticated %}
-                <li><a href="{{ url_for('main.show_compound') }}">ShowCompounds</a></li>
-                <li><a href="{{ url_for('main.hitlist') }}">Pastehitlist</a></li>
-
+                <li><a href="{{ url_for('main.hitlist') }}">Paste Hitlist</a></li>
+                <li><a href="{{ url_for('main.show_compound') }}">Display Compounds</a></li>
+                <li><a href="{{ url_for('main.search_compound') }}">Search Compound</a></li>
                 {% endif %}
 
+    </p>
+
+
+<p>
                 {% if current_user.can(Permission.EDIT_DB) %}
+                <h2>Admin Tasks</h2>
                 <li><a href="{{ url_for('auth.delete_user') }}">Delete User</a></li>
-                <li><a href="{{ url_for('auth.user_management') }}">User Management</a></li>
-                <li><a href="{{ url_for('main.delete_compound') }}">DeleteCompounds</a></li>
-                <li><a href="{{ url_for('main.register_compound') }}">RegisterCompounds</a></li>
+                <li><a href="{{ url_for('auth.user_management') }}">List Users</a></li>
+                <li><a href="{{ url_for('main.delete_compound') }}">Delete Compounds</a></li>
+                <li><a href="{{ url_for('main.register_compound') }}">Register Compound</a></li>
                 <li><a href="{{ url_for('auth.register') }}">Register New User</a></li>
                 {% endif %}
 </P>

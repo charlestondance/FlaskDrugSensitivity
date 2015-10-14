@@ -20,7 +20,11 @@ class AddCompound(Form):
 
 class DeleteCompound(Form):
     formatted_batch_id = StringField('Batch ID', validators=[Required(), Length(1, 64)])
-    submit = SubmitField('DeleteCompound')
+    submit = SubmitField('Delete Compound')
+
+class SearchCompound(Form):
+    formatted_batch_id = StringField('Batch ID', validators=[Required(), Length(1, 64)])
+    submit = SubmitField('Search Compound')
 
 class Hitlist(Form):
     hitlist = TextAreaField("Paste in list of compounds", validators=[Required()])

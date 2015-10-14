@@ -6,14 +6,16 @@
 
 {% block page_content %}
 <div class="page-header">
-    <h1>ShowCompound</h1>
+    <h1>Compounds</h1>
 
 {% include '_showcompound.html' %}
     {% if pagination %}
     <div class="pagination">
-    {{ macros.pagination_widget(pagination, '.show_compound') }}
+    {{ macros.pagination_widget(page_decrement, pageincrement, pagination, '.show_compound' ) }}
 </div>
     {% endif %}
 </div>
+
+
 
 {% endblock %}
