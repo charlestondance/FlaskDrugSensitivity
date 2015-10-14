@@ -75,7 +75,7 @@ def hitlist():
     form = Hitlist()
 
     if form.validate_on_submit():
-        flash('Hitlist')
+
         hitlist_store = (form.data['hitlist'])
         #split out the data into a list
         hitlist_list = hitlist_store.split('\r\n')
@@ -90,12 +90,38 @@ def hitlist():
             except:
                 flash('didnt work - '+ x)
         output_list = make_hitlist(db_hitlist, form.data['copies'], form.data['name'])
-        print(output_list)
 
-        output = excel.make_response_from_array(output_list, 'xls')
-        output.headers["Content-Disposition"] = "attachment; filename=export.xls"
-        output.headers["Content-type"] = "text/csv"
-        flash("Done!")
+        #the options are for 1=echo, just output the hitlist for echo
+        if form.role.data == 1:
+
+            output = excel.make_response_from_array(output_list, 'xls')
+            output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + ".xls"
+            output.headers["Content-type"] = "text/csv"
+        else:
+            #count the number of destination plates
+            destination_barcodes = []
+            destination_barcodes_for_out = []
+            for x in output_list[1:]:
+                destination_barcodes.append(x[5])
+                #have to have two columns for export, barcode means nothing
+                destination_barcodes_for_out.append([x[5], "Barcode"])
+
+            destination_plates = (len(set(destination_barcodes)))
+            #count the number of source plates
+            source_barcodes = []
+            for x in output_list[1:]:
+                source_barcodes.append(x[1])
+
+            source_plates = (len(set(source_barcodes)))
+            
+
+            output = excel.make_response_from_array(destination_barcodes_for_out, 'xls')
+            output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + "_barcodes.xls"
+            output.headers["Content-type"] = "text/csv"
+            if destination_plates + source_plates > 84:
+                flash("WARNING, the number of plates exceed system capacity (84) for set " + form.name.data + ".")
+
+        flash("Done! " + form.name.data)
         return output
 
 

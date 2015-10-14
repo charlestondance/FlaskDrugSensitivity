@@ -27,10 +27,16 @@ class SearchCompound(Form):
     submit = SubmitField('Search Compound')
 
 class Hitlist(Form):
+
     hitlist = TextAreaField("Paste in list of compounds", validators=[Required()])
     copies = IntegerField("How many sets", validators=[Required()])
-    name = TextAreaField("Destination Set Name", validators=[Required()])
+    name = StringField("Destination Set Name", validators=[Required(), Length(1, 9)])
+    role = SelectField('Export File for', coerce=int)
     submit = SubmitField('Submit')
+
+    def __init__(self, *args, **kwargs):
+        super(Hitlist, self).__init__(*args, **kwargs)
+        self.role.choices = [(1, "Echo"), (2, "Barcode")]
 
 class EditProfileAdminForm(Form):
     email = StringField('Email', validators=[Required(), Length(1, 64), Email()])

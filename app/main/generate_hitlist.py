@@ -4,8 +4,8 @@ import csv
 import random
 
 def make_hitlist(hitlist, copies, name):
-    print(hitlist)
-    print(copies)
+    #print(hitlist)
+    #print(copies)
 
     destination_wells_list = destination_wells()
     LAST_DEST_ITERATOR = 289
@@ -79,7 +79,7 @@ def make_hitlist(hitlist, copies, name):
                     current_line_list = ['Control', 'FIXED', CONTROL_SOURCE[random.randint(0,15)], '25', control, name+"-"+dest_barcode_letter + str(i+1)]
                     output_list.append(current_line_list)
         #inrement the letter
-        print(dest_barcode_letter)
+        #print(dest_barcode_letter)
         dest_barcode_letter = chr(ord(dest_barcode_letter) + 1)
 
     return output_list
