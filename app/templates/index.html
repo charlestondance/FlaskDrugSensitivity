@@ -11,6 +11,7 @@
 
                 {% if current_user.is_authenticated %}
                 <li><a href="{{ url_for('main.hitlist') }}">Paste Hitlist</a></li>
+                <li><a href="{{ url_for('main.combinationhitlist') }}">Combination Paste Hitlist</a></li>
                 <li><a href="{{ url_for('main.show_compound') }}">Display Compounds</a></li>
                 <li><a href="{{ url_for('main.search_compound') }}">Search Compound</a></li>
                 {% endif %}

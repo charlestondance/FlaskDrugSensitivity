@@ -78,3 +78,15 @@ class EditCompound(Form):
 
         self.compound = compound
 
+class CombinationHitlist(Form):
+
+    hitlist = TextAreaField("Paste in list of compounds", validators=[Required()])
+    hitlist2 = TextAreaField("Paste in list of compounds", validators=[Required()])
+    hitlist3 = TextAreaField("Paste in list of compounds")
+    hitlist4 = TextAreaField("Paste in list of compounds")
+    copies = IntegerField("How many sets", validators=[Required()])
+    name = StringField("Destination Set Name", validators=[Required(), Length(1, 9)])
+
+    submit = SubmitField('Submit')
+
+

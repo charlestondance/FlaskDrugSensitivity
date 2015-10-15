@@ -1,9 +1,9 @@
 from flask import render_template,redirect, request, url_for, flash
 from . import main
 from ..models import CompoundDB, User, Role, Permission
-from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound, SearchCompound
+from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound, SearchCompound, CombinationHitlist
 from .. import db
-from app.main.generate_hitlist import make_hitlist
+from app.main.generate_hitlist import make_hitlist, combination_make_hitlist
 from flask.ext import excel
 import pyexcel.ext.xls
 from flask.ext.login import login_required, current_user
@@ -113,7 +113,7 @@ def hitlist():
                 source_barcodes.append(x[1])
 
             source_plates = (len(set(source_barcodes)))
-            
+
 
             output = excel.make_response_from_array(destination_barcodes_for_out, 'xls')
             output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + "_barcodes.xls"
@@ -187,3 +187,48 @@ def search_compound():
         return redirect(url_for('.edit_compound', batch_id = compound ))
 
     return render_template('searchcompound.html', form=form)
+
+@main.route('/combinationhitlist', methods=['GET', 'POST'])
+@login_required
+def combinationhitlist():
+    form = CombinationHitlist()
+
+    if form.validate_on_submit():
+
+        hitlist_store1 = (form.data['hitlist'])
+        #split out the data into a list
+        hitlist_list1 = hitlist_store1.split('\r\n')
+        db_hitlist1 = []
+        for x in hitlist_list1:
+            #iterate through the list and search the db
+            try:
+                query_line_fromhitlist = CompoundDB.query.filter_by(formatted_batch_id=x).first()
+                listio = (query_line_fromhitlist.formatted_batch_id, query_line_fromhitlist.barcode, query_line_fromhitlist.well_ref, query_line_fromhitlist.starting_concentration, query_line_fromhitlist.concentration_range)
+                db_hitlist1.append(listio)
+
+            except:
+                flash('didnt work - '+ x)
+        #second hitlist
+        hitlist_store2 = (form.data['hitlist2'])
+        #split out the data into a list
+        hitlist_list2 = hitlist_store2.split('\r\n')
+        db_hitlist2 = []
+        for x in hitlist_list2:
+            #iterate through the list and search the db
+            try:
+                query_line_fromhitlist = CompoundDB.query.filter_by(formatted_batch_id=x).first()
+                listio = (query_line_fromhitlist.formatted_batch_id, query_line_fromhitlist.barcode, query_line_fromhitlist.well_ref, query_line_fromhitlist.starting_concentration, query_line_fromhitlist.concentration_range)
+                db_hitlist2.append(listio)
+
+            except:
+                flash('didnt work - '+ x)
+
+        output_list = combination_make_hitlist(db_hitlist1, db_hitlist2, form.data['copies'], form.data['name'])
+
+        output = excel.make_response_from_array(output_list, 'xls')
+        output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + ".xls"
+        output.headers["Content-type"] = "text/csv"
+
+        return output
+
+    return render_template('combination_hitlist.html', form=form)
