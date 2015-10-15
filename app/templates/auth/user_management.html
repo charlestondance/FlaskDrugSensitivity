@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky - User Management{% endblock %}
+
+{% block page_content %}
+
+
+<p>
+
+    <table class="table table-striped">
+    <tr>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Role ID</th>
+  </tr>
+        {% for user_list in user_list %}
+       <tr>
+        <td>{{ user_list.username }}</td> <td>{{ user_list.email }}</td> <td>{{ user_list.role_id }}</td> </tr>
+    {% endfor %}
+</p>
+    </table>
+    </div>
+</p>
+
+{% endblock %}

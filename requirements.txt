@@ -27,3 +27,4 @@ wheel==0.26.0
 WTForms==2.0.2
 psycopg2==2.5.1
 pyexcel-xls==0.0.7
+Flask-SSLify==0.1.5
