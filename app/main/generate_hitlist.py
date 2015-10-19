@@ -95,7 +95,8 @@ def get_starting_barcode(starting_iterator, barcode):
             listofbarcode.append(barcode + x)
         return listofbarcode
     else:
-        for x in intermediates[int(starting_iterator):]:
+
+        for x in intermediates[int(starting_iterator)-1:]:
             listofbarcode.append(barcode + x)
         return listofbarcode
 
