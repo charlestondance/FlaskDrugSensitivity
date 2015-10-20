@@ -1,13 +1,14 @@
 from flask import render_template,redirect, request, url_for, flash
 from . import main
 from ..models import CompoundDB, User, Role, Permission
-from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound, SearchCompound, CombinationHitlist
+from .forms import AddCompound, DeleteCompound, Hitlist, EditProfileAdminForm, EditCompound, SearchCompound, CombinationHitlist, UploadCSVfile
 from .. import db
 from app.main.generate_hitlist import make_hitlist, combination_make_hitlist
 from flask.ext import excel
 import pyexcel.ext.xls
 from flask.ext.login import login_required, current_user
 from ..decorators import admin_required, permission_required
+from werkzeug import secure_filename
 
 @main.route('/')
 def index():
@@ -232,3 +233,20 @@ def combinationhitlist():
         return output
 
     return render_template('combination_hitlist.html', form=form)
+
+@main.route('/uploadcsv', methods=['GET', 'POST'])
+@login_required
+@permission_required(Permission.EDIT_DB)
+def uploadcsv():
+    """upload csv files of compounds to the database"""
+    form = UploadCSVfile()
+    if form.validate_on_submit():
+        filename = secure_filename(form.compounds.data.filename)
+        form.compounds.data.save("app/uploads/" + filename)
+        filename_read = "app/uploads/" + filename
+        print(filename_read)
+        CompoundDB().upload_csv(filename_read)
+        return "man"
+
+    return render_template('uploadcsv.html', form=form)
+

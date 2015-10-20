@@ -98,8 +98,9 @@ class CompoundDB(db.Model):
         with open(filename, newline='') as csvfile:
             read_source = csv.reader(csvfile, delimiter=',')
             for row in read_source:
-                if row[0] == 'FORMATTED_ID':
+                if row[0] == 'FORMATTED_BATCH_ID':
                     continue
+                else:
                 compound_add = CompoundDB(formatted_batch_id=row[0], supplier=row[1], supplier_ref=row[2], well_ref=row[3], barcode=row[4], starting_concentration=row[5], concentration_range=row[6])
                 db.session.add(compound_add)
 

@@ -1,0 +1,350 @@
+FORMATTED_BATCH_ID,SUPPLIER,SUPPLIER_REF,WELL_REF,BARCODE,Starting Concentration,Concentration Range
+CBP-0016709-05,Jorrit_Anticancer_Selleck,Ubenimex (Bestatin),O14,B004,0,A
+CBP-0016714-04,Jorrit_Anticancer_Selleck,Altretamine (Hexalen),H07,B004,0,A
+CBP-0016753-04,Jorrit_Anticancer_Selleck,Aminoglutethimide (Cytadren),J12,B004,0,A
+CBP-0016836-04,Jorrit_Anticancer_Selleck,Clafen (Cyclophosphamide),J09,B004,0,A
+CBP-0016836-05,Jorrit_Anticancer_Selleck,Cyclophosphamide monohydrate,N13,B004,0,A
+CBP-0016855-05,Jorrit_Anticancer_Selleck,"Azathioprine (Azasan, Imuran)",B16,B004,0,A
+CBP-0016894-05,Jorrit_Anticancer_Selleck,Carboplatin,B09,B004,0,A
+CBP-0016946-05,Jorrit_Anticancer_Selleck,Abitrexate (Methotrexate),J06,B004,0,A
+CBP-0017021-04,Jorrit_Anticancer_Selleck,Flutamide (Eulexin),L15,B004,0,A
+CBP-0017285-03,Jorrit_Anticancer_Selleck,Hydroxyurea (Cytodrox),D15,B004,0,A
+CBP-0017334-05,Jorrit_Anticancer_Selleck,Adrucil (Fluorouracil),O11,B004,0,A
+CBP-0017339-04,Jorrit_Anticancer_Selleck,Lonidamine,M20,B004,0,A
+CBP-0017367-04,Jorrit_Anticancer_Selleck,Phloretin (Dihydronaringenin),K19,B004,0,A
+CBP-0017383-07,Jorrit_Anticancer_Selleck,LY294002,F03,B004,0,A
+CBP-0017443-07,Jorrit_Anticancer_Selleck,SB 216763,J04,B004,0,A
+CBP-0017466-06,Jorrit_Anticancer_Selleck,Nocodazole,D21,B004,0,A
+CBP-0017561-05,Jorrit_Anticancer_Selleck,Cisplatin,C09,B004,0,A
+CBP-0017576-07,Jorrit_Anticancer_Selleck,Quercetin (Sophoretin),K20,B004,0,A
+CBP-0017586-04,Jorrit_Anticancer_Selleck,Valproic acid sodium salt (Sodium valproate),K09,B004,0,A
+CBP-0017631-05,Jorrit_Anticancer_Selleck,Evista (Raloxifene HCl),L08,B004,0,A
+CBP-0017633-07,Jorrit_Anticancer_Selleck,Tretinoin (Aberela),O16,B004,0,A
+CBP-0017654-04,Jorrit_Anticancer_Selleck,Mitoxantrone HCl,M17,B004,0,A
+CBP-0017665-04,Jorrit_Anticancer_Selleck,Ranolazine (Ranexa),L13,B004,0,A
+CBP-0017695-05,Jorrit_Anticancer_Selleck,Disulfiram (Antabuse),B13,B004,0,A
+CBP-0017869-08,Jorrit_Anticancer_Selleck,Tamoxifen Citrate (Nolvadex),L16,B004,0,A
+CBP-0017887-06,Jorrit_Anticancer_Selleck,Thalidomide,O06,B004,0,A
+CBP-0063681-04,Jorrit_Anticancer_Selleck,Pioglitazone (Actos),M19,B004,0,A
+CBP-0063696-02,Jorrit_Anticancer_Selleck,"Busulfan (Myleran, Busulfex)",B14,B004,0,A
+CBP-0063719-04,Jorrit_Anticancer_Selleck,Vatalanib 2HCl (PTK787),F02,B004,0,A
+CBP-0063770-03,Jorrit_Anticancer_Selleck,Mercaptopurine,P10,B004,0,A
+CBP-0063812-06,Jorrit_Anticancer_Selleck,Temozolomide,N06,B004,0,A
+CBP-0063852-04,Jorrit_Anticancer_Selleck,Erlotinib HCl,C04,B004,0,A
+CBP-0063882-05,Jorrit_Anticancer_Selleck,Gefitinib (Iressa),K04,B004,0,A
+CBP-0063891-03,Jorrit_Anticancer_Selleck,Streptozotocin (Zanosar),P11,B004,0,A
+CBP-0063897-03,Jorrit_Anticancer_Selleck,"Toremifene Citrate (Fareston, Acapodene)",B17,B004,0,A
+CBP-0063900-03,Jorrit_Anticancer_Selleck,Zileuton,I15,B004,0,A
+CBP-0063902-02,Jorrit_Anticancer_Selleck,Ifosfamide,P09,B004,0,A
+CBP-0063954-03,Jorrit_Anticancer_Selleck,Bicalutamide (Casodex),M10,B004,0,A
+CBP-0064021-03,Jorrit_Anticancer_Selleck,Topotecan HCl,D10,B004,0,A
+CBP-0064024-07,Jorrit_Anticancer_Selleck,Imatinib Mesylate,C05,B004,0,A
+CBP-0064024-08,Jorrit_Anticancer_Selleck,Imatinib (Gleevec),A22,B004,0,A
+CBP-0064031-03,Jorrit_Anticancer_Selleck,Anastrozole,M09,B004,0,A
+CBP-0064045-03,Jorrit_Anticancer_Selleck,Gemcitabine (Gemzar),J15,B004,0,A
+CBP-0064068-04,Jorrit_Anticancer_Selleck,Celecoxib,N09,B004,0,A
+CBP-0064073-03,Jorrit_Anticancer_Selleck,Letrozole,D11,B004,0,A
+CBP-0064105-03,Jorrit_Anticancer_Selleck,Cladribine,O08,B004,0,A
+CBP-0064121-03,Jorrit_Anticancer_Selleck,Imiquimod,B07,B004,0,A
+CBP-0064136-04,Jorrit_Anticancer_Selleck,Vorinostat (SAHA),O01,B004,0,A
+CBP-0064355-02,Jorrit_Anticancer_Selleck,Leucovorin Calcium,L11,B004,0,A
+CBP-0064374-05,Jorrit_Anticancer_Selleck,Irinotecan HCl Trihydrate (Campto),P16,B004,0,A
+CBP-0064388-02,Jorrit_Anticancer_Selleck,"Mesna (Uromitexan, Mesnex)",J16,B004,0,A
+CBP-0064393-03,Jorrit_Anticancer_Selleck,Procarbazine HCl (Matulane),D17,B004,0,A
+CBP-0064416-04,Jorrit_Anticancer_Selleck,Rosiglitazone (Avandia),M18,B004,0,A
+CBP-0064468-03,Jorrit_Anticancer_Selleck,ABT-737,I01,B004,0,A
+CBP-0064469-03,Jorrit_Anticancer_Selleck,ABT-751,K08,B004,0,A
+CBP-0064470-05,Jorrit_Anticancer_Selleck,(-)-Epigallocatechin gallate,C18,B004,0,A
+CBP-0064472-03,Jorrit_Anticancer_Selleck,3-Methyladenine,D20,B004,0,A
+CBP-0064473-04,Jorrit_Anticancer_Selleck,A-769662,K22,B004,0,A
+CBP-0064475-03,Jorrit_Anticancer_Selleck,ABT-263 (Navitoclax),A01,B004,0,A
+CBP-0064476-04,Jorrit_Anticancer_Selleck,Anagrelide HCl,H20,B004,0,A
+CBP-0064478-03,Jorrit_Anticancer_Selleck,AEE788 (NVP-AEE788),C13,B004,0,A
+CBP-0064479-03,Jorrit_Anticancer_Selleck,Afatinib (BIBW2992),I05,B004,0,A
+CBP-0064480-03,Jorrit_Anticancer_Selleck,AG14361,N16,B004,0,A
+CBP-0064481-03,Jorrit_Anticancer_Selleck,AMG 900,B20,B004,0,A
+CBP-0064482-03,Jorrit_Anticancer_Selleck,Amuvatinib (MP-470),N07,B004,0,A
+CBP-0064483-03,Jorrit_Anticancer_Selleck,AZ 3146,M22,B004,0,A
+CBP-0064484-03,Jorrit_Anticancer_Selleck,AZ628,L18,B004,0,A
+CBP-0064485-03,Jorrit_Anticancer_Selleck,Andarine (GTX-007),A07,B004,0,A
+CBP-0064486-03,Jorrit_Anticancer_Selleck,APO866 (FK866),N17,B004,0,A
+CBP-0064487-03,Jorrit_Anticancer_Selleck,AR-42 (HDAC-42),I21,B004,0,A
+CBP-0064488-03,Jorrit_Anticancer_Selleck,AT-406,D19,B004,0,A
+CBP-0064489-03,Jorrit_Anticancer_Selleck,AT7519,M12,B004,0,A
+CBP-0064490-03,Jorrit_Anticancer_Selleck,AUY922 (NVP-AUY922),B03,B004,0,A
+CBP-0064491-03,Jorrit_Anticancer_Selleck,Axitinib,A03,B004,0,A
+CBP-0064492-04,Jorrit_Anticancer_Selleck,BAY 11-7082 (BAY 11-7821),P17,B004,0,A
+CBP-0064493-03,Jorrit_Anticancer_Selleck,Belinostat (PXD101),L02,B004,0,A
+CBP-0064494-03,Jorrit_Anticancer_Selleck,AZD6244 (Selumetinib),A04,B004,0,A
+CBP-0064495-03,Jorrit_Anticancer_Selleck,AZD7762,E14,B004,0,A
+CBP-0064496-03,Jorrit_Anticancer_Selleck,AZD8055,E17,B004,0,A
+CBP-0064498-03,Jorrit_Anticancer_Selleck,Barasertib (AZD1152-HQPA),I09,B004,0,A
+CBP-0064499-03,Jorrit_Anticancer_Selleck,BIRB 796 (Doramapimod),O13,B004,0,A
+CBP-0064500-03,Jorrit_Anticancer_Selleck,BKM120 (NVP-BKM120),F22,B004,0,A
+CBP-0064501-03,Jorrit_Anticancer_Selleck,BEZ235 (NVP-BEZ235),I04,B004,0,A
+CBP-0064502-03,Jorrit_Anticancer_Selleck,BI 2536,N04,B004,0,A
+CBP-0064503-03,Jorrit_Anticancer_Selleck,BI6727 (Volasertib),A20,B004,0,A
+CBP-0064504-03,Jorrit_Anticancer_Selleck,BIBF1120 (Vargatef),A05,B004,0,A
+CBP-0064505-04,Jorrit_Anticancer_Selleck,BIBR 1532,M08,B004,0,A
+CBP-0064506-03,Jorrit_Anticancer_Selleck,BIIB021,M06,B004,0,A
+CBP-0064509-03,Jorrit_Anticancer_Selleck,Bleomycin sulfate,J08,B004,0,A
+CBP-0064510-03,Jorrit_Anticancer_Selleck,BMS 777607,G12,B004,0,A
+CBP-0064511-04,Jorrit_Anticancer_Selleck,BMS 794833,H14,B004,0,A
+CBP-0064512-03,Jorrit_Anticancer_Selleck,Bortezomib (Velcade),A06,B004,0,A
+CBP-0064513-04,Jorrit_Anticancer_Selleck,Bosutinib (SKI-606),C01,B004,0,A
+CBP-0064514-03,Jorrit_Anticancer_Selleck,BX-795,P06,B004,0,A
+CBP-0064515-03,Jorrit_Anticancer_Selleck,CAL-101 (GS-1101),I18,B004,0,A
+CBP-0064516-03,Jorrit_Anticancer_Selleck,Canagliflozin,L19,B004,0,A
+CBP-0064517-03,Jorrit_Anticancer_Selleck,CP-466722,P21,B004,0,A
+CBP-0064518-03,Jorrit_Anticancer_Selleck,CEP33779,N18,B004,0,A
+CBP-0064519-03,Jorrit_Anticancer_Selleck,CH5132799,J17,B004,0,A
+CBP-0064520-04,Jorrit_Anticancer_Selleck,CHIR-99021 (CT99021) HCl,H18,B004,0,A
+CBP-0064521-03,Jorrit_Anticancer_Selleck,Chrysophanic acid (Chrysophanol),K21,B004,0,A
+CBP-0064523-04,Jorrit_Anticancer_Selleck,Clofarabine,B10,B004,0,A
+CBP-0064524-03,Jorrit_Anticancer_Selleck,Coenzyme Q10 (CoQ10),C21,B004,0,A
+CBP-0064525-03,Jorrit_Anticancer_Selleck,Cyt387,H17,B004,0,A
+CBP-0064526-03,Jorrit_Anticancer_Selleck,Crenolanib (CP-868596),G22,B004,0,A
+CBP-0064527-03,Jorrit_Anticancer_Selleck,Crizotinib (PF-02341066),J02,B004,0,A
+CBP-0064528-03,Jorrit_Anticancer_Selleck,CUDC-101,G07,B004,0,A
+CBP-0064529-03,Jorrit_Anticancer_Selleck,CX-4945 (Silmitasertib),K17,B004,0,A
+CBP-0064530-03,Jorrit_Anticancer_Selleck,CYC116,C10,B004,0,A
+CBP-0064533-04,Jorrit_Anticancer_Selleck,Decitabine,G09,B004,0,A
+CBP-0064535-03,Jorrit_Anticancer_Selleck,"Dacomitinib (PF299804,PF-00299804)",J21,B004,0,A
+CBP-0064536-03,Jorrit_Anticancer_Selleck,Dalcetrapib (JTT-705),L20,B004,0,A
+CBP-0064537-03,Jorrit_Anticancer_Selleck,Danusertib (PHA-739358),N03,B004,0,A
+CBP-0064539-04,Jorrit_Anticancer_Selleck,DAPT (GSI-IX),H16,B004,0,A
+CBP-0064540-03,Jorrit_Anticancer_Selleck,Dasatinib (BMS-354825),C03,B004,0,A
+CBP-0064541-03,Jorrit_Anticancer_Selleck,DCC-2036 (Rebastinib),O17,B004,0,A
+CBP-0064542-03,Jorrit_Anticancer_Selleck,ENMD-2076,E08,B004,0,A
+CBP-0064543-03,Jorrit_Anticancer_Selleck,"Entinostat (MS-275, SNDX-275)",O03,B004,0,A
+CBP-0064545-03,Jorrit_Anticancer_Selleck,Dovitinib (TKI-258),C02,B004,0,A
+CBP-0064547-03,Jorrit_Anticancer_Selleck,E7080 (Lenvatinib),C08,B004,0,A
+CBP-0064548-03,Jorrit_Anticancer_Selleck,Elesclomol,G03,B004,0,A
+CBP-0064550-03,Jorrit_Anticancer_Selleck,Enzastaurin (LY317615),G04,B004,0,A
+CBP-0064553-03,Jorrit_Anticancer_Selleck,EX 527,M15,B004,0,A
+CBP-0064554-03,Jorrit_Anticancer_Selleck,GDC-0941,J01,B004,0,A
+CBP-0064555-03,Jorrit_Anticancer_Selleck,Febuxostat (Uloric),E16,B004,0,A
+CBP-0064556-03,Jorrit_Anticancer_Selleck,Fingolimod (FTY720),H21,B004,0,A
+CBP-0064557-04,Jorrit_Anticancer_Selleck,Flavopiridol (Alvocidib) HCl,O20,B004,0,A
+CBP-0064560-03,Jorrit_Anticancer_Selleck,GW3965 HCl,I22,B004,0,A
+CBP-0064561-05,Jorrit_Anticancer_Selleck,Gossypol,C19,B004,0,A
+CBP-0064562-03,Jorrit_Anticancer_Selleck,GSK1120212 (Trametinib),G20,B004,0,A
+CBP-0064563-03,Jorrit_Anticancer_Selleck,GSK1904529A,D05,B004,0,A
+CBP-0064565-03,Jorrit_Anticancer_Selleck,GSK461364,H13,B004,0,A
+CBP-0064566-03,Jorrit_Anticancer_Selleck,GSK690693,N05,B004,0,A
+CBP-0064567-04,Jorrit_Anticancer_Selleck,GW4064,L21,B004,0,A
+CBP-0064568-03,Jorrit_Anticancer_Selleck,JNJ 26854165 (Serdemetan),K10,B004,0,A
+CBP-0064569-03,Jorrit_Anticancer_Selleck,JNJ-38877605,F06,B004,0,A
+CBP-0064570-03,Jorrit_Anticancer_Selleck,IC-87114,N11,B004,0,A
+CBP-0064571-03,Jorrit_Anticancer_Selleck,Iniparib (BSI-201),D03,B004,0,A
+CBP-0064572-03,Jorrit_Anticancer_Selleck,INK 128 (MLN0128),F19,B004,0,A
+CBP-0064573-03,Jorrit_Anticancer_Selleck,Ispinesib (SB-715992),A16,B004,0,A
+CBP-0064575-03,Jorrit_Anticancer_Selleck,Linifanib (ABT-869),A02,B004,0,A
+CBP-0064576-03,Jorrit_Anticancer_Selleck,JNJ-7706621,N08,B004,0,A
+CBP-0064577-03,Jorrit_Anticancer_Selleck,Ku-0063794,D08,B004,0,A
+CBP-0064578-04,Jorrit_Anticancer_Selleck,KU-55933,L04,B004,0,A
+CBP-0064579-03,Jorrit_Anticancer_Selleck,KU-60019,G13,B004,0,A
+CBP-0064580-03,Jorrit_Anticancer_Selleck,KX2-391,B18,B004,0,A
+CBP-0064581-03,Jorrit_Anticancer_Selleck,"LDE225 (NVP-LDE225, Erismodegib)",F16,B004,0,A
+CBP-0064582-03,Jorrit_Anticancer_Selleck,LDN193189,M21,B004,0,A
+CBP-0064583-03,Jorrit_Anticancer_Selleck,Lenalidomide (Revlimid),C06,B004,0,A
+CBP-0064584-03,Jorrit_Anticancer_Selleck,MDV3100 (Enzalutamide),F09,B004,0,A
+CBP-0064587-03,Jorrit_Anticancer_Selleck,Lomustine (CeeNU),D14,B004,0,A
+CBP-0064588-03,Jorrit_Anticancer_Selleck,LY2109761,J18,B004,0,A
+CBP-0064590-03,Jorrit_Anticancer_Selleck,LY2603618 (IC-83),C22,B004,0,A
+CBP-0064591-03,Jorrit_Anticancer_Selleck,Maraviroc,N12,B004,0,A
+CBP-0064592-03,Jorrit_Anticancer_Selleck,MLN2238,F17,B004,0,A
+CBP-0064593-03,Jorrit_Anticancer_Selleck,MLN8237 (Alisertib),P05,B004,0,A
+CBP-0064595-03,Jorrit_Anticancer_Selleck,MK-0752,G19,B004,0,A
+CBP-0064596-03,Jorrit_Anticancer_Selleck,MK-1775,E13,B004,0,A
+CBP-0064597-03,Jorrit_Anticancer_Selleck,MK-2206 2HCl,J05,B004,0,A
+CBP-0064599-03,Jorrit_Anticancer_Selleck,NU7441 (KU-57788),G18,B004,0,A
+CBP-0064600-03,Jorrit_Anticancer_Selleck,MLN9708,H12,B004,0,A
+CBP-0064601-03,Jorrit_Anticancer_Selleck,Mocetinostat (MGCD0103),P03,B004,0,A
+CBP-0064602-03,Jorrit_Anticancer_Selleck,Motesanib Diphosphate (AMG-706),E01,B004,0,A
+CBP-0064603-03,Jorrit_Anticancer_Selleck,Mycophenolate mofetil (CellCept),C16,B004,0,A
+CBP-0064604-03,Jorrit_Anticancer_Selleck,Mycophenolic (Mycophenolate),E18,B004,0,A
+CBP-0064605-03,Jorrit_Anticancer_Selleck,Neratinib (HKI-272),N15,B004,0,A
+CBP-0064606-03,Jorrit_Anticancer_Selleck,Nilotinib (AMN-107),M01,B004,0,A
+CBP-0064607-03,Jorrit_Anticancer_Selleck,Palomid 529,I20,B004,0,A
+CBP-0064609-03,Jorrit_Anticancer_Selleck,Nutlin-3,G06,B004,0,A
+CBP-0064610-03,Jorrit_Anticancer_Selleck,NVP-BSK805 2HCl,O21,B004,0,A
+CBP-0064611-03,Jorrit_Anticancer_Selleck,Obatoclax mesylate (GX15-070),G05,B004,0,A
+CBP-0064612-03,Jorrit_Anticancer_Selleck,Olaparib (AZD2281),O05,B004,0,A
+CBP-0064613-03,Jorrit_Anticancer_Selleck,OSI-930,B11,B004,0,A
+CBP-0064615-03,Jorrit_Anticancer_Selleck,PAC-1,D18,B004,0,A
+CBP-0064618-03,Jorrit_Anticancer_Selleck,PCI-24781,L03,B004,0,A
+CBP-0064620-03,Jorrit_Anticancer_Selleck,PD 0332991 (Palbociclib) HCl,H01,B004,0,A
+CBP-0064621-03,Jorrit_Anticancer_Selleck,PD0325901,E02,B004,0,A
+CBP-0064622-03,Jorrit_Anticancer_Selleck,PD153035 HCl,B06,B004,0,A
+CBP-0064623-03,Jorrit_Anticancer_Selleck,PD173074,F10,B004,0,A
+CBP-0064624-03,Jorrit_Anticancer_Selleck,Pelitinib (EKB-569),A15,B004,0,A
+CBP-0064625-04,Jorrit_Anticancer_Selleck,PI-103,M02,B004,0,A
+CBP-0064626-03,Jorrit_Anticancer_Selleck,PIK-75,G10,B004,0,A
+CBP-0064627-03,Jorrit_Anticancer_Selleck,PF 573228,F13,B004,0,A
+CBP-0064628-03,Jorrit_Anticancer_Selleck,PF-04217903,L05,B004,0,A
+CBP-0064629-03,Jorrit_Anticancer_Selleck,PF-3845,O19,B004,0,A
+CBP-0064630-03,Jorrit_Anticancer_Selleck,PF-562271,D22,B004,0,A
+CBP-0064631-03,Jorrit_Anticancer_Selleck,PH-797804,B21,B004,0,A
+CBP-0064633-03,Jorrit_Anticancer_Selleck,PHA-793887,K13,B004,0,A
+CBP-0064634-03,Jorrit_Anticancer_Selleck,"R935788 (Fostamatinib disodium, R788 disodium)",H15,B004,0,A
+CBP-0064635-03,Jorrit_Anticancer_Selleck,PIK-90,E09,B004,0,A
+CBP-0064636-03,Jorrit_Anticancer_Selleck,PIK-93,C14,B004,0,A
+CBP-0064637-03,Jorrit_Anticancer_Selleck,Ponatinib (AP24534),K14,B004,0,A
+CBP-0064638-03,Jorrit_Anticancer_Selleck,Quizartinib (AC220),M13,B004,0,A
+CBP-0064639-04,Jorrit_Anticancer_Selleck,R406 (free base),M14,B004,0,A
+CBP-0064640-03,Jorrit_Anticancer_Selleck,Saracatinib (AZD0530),I03,B004,0,A
+CBP-0064641-05,Jorrit_Anticancer_Selleck,SB 203580,B05,B004,0,A
+CBP-0064643-03,Jorrit_Anticancer_Selleck,RG108,F20,B004,0,A
+CBP-0064644-05,Jorrit_Anticancer_Selleck,"Roscovitine (Seliciclib, CYC202)",I11,B004,0,A
+CBP-0064645-03,Jorrit_Anticancer_Selleck,"Rucaparib (AG-014699 , PF-01367338)",N01,B004,0,A
+CBP-0064648-04,Jorrit_Anticancer_Selleck,Sirtinol,F18,B004,0,A
+CBP-0064649-03,Jorrit_Anticancer_Selleck,SNS-032 (BMS-387032),I08,B004,0,A
+CBP-0064650-04,Jorrit_Anticancer_Selleck,SB 431542,B02,B004,0,A
+CBP-0064651-03,Jorrit_Anticancer_Selleck,SB 525334,K12,B004,0,A
+CBP-0064653-03,Jorrit_Anticancer_Selleck,SB939 (Pracinostat),K16,B004,0,A
+CBP-0064654-03,Jorrit_Anticancer_Selleck,SGI-1776 free base,P13,B004,0,A
+CBP-0064655-03,Jorrit_Anticancer_Selleck,SGX-523,F05,B004,0,A
+CBP-0064656-03,Jorrit_Anticancer_Selleck,Sunitinib Malate (Sutent),M04,B004,0,A
+CBP-0064657-03,Jorrit_Anticancer_Selleck,TAE684 (NVP-TAE684),F04,B004,0,A
+CBP-0064658-03,Jorrit_Anticancer_Selleck,SNS-314 Mesylate,K06,B004,0,A
+CBP-0064660-04,Jorrit_Anticancer_Selleck,Sorafenib (Nexavar),M03,B004,0,A
+CBP-0064661-03,Jorrit_Anticancer_Selleck,Sotrastaurin (AEB071),O22,B004,0,A
+CBP-0064662-03,Jorrit_Anticancer_Selleck,SRT1720,P04,B004,0,A
+CBP-0064663-02,Jorrit_Anticancer_Selleck,Ruxolitinib (INCB018424),A14,B004,0,A
+CBP-0064663-03,Jorrit_Anticancer_Selleck,S-Ruxolitinib,J22,B004,0,A
+CBP-0064665-03,Jorrit_Anticancer_Selleck,SB 743921,P12,B004,0,A
+CBP-0064666-03,Jorrit_Anticancer_Selleck,Tie2 kinase inhibitor,G14,B004,0,A
+CBP-0064667-03,Jorrit_Anticancer_Selleck,Tipifarnib (Zarnestra),I16,B004,0,A
+CBP-0064668-03,Jorrit_Anticancer_Selleck,TAK-733,E21,B004,0,A
+CBP-0064669-03,Jorrit_Anticancer_Selleck,TAME,A18,B004,0,A
+CBP-0064670-03,Jorrit_Anticancer_Selleck,Tandutinib (MLN518),E05,B004,0,A
+CBP-0064671-03,Jorrit_Anticancer_Selleck,Telatinib (BAY 57-9352),I19,B004,0,A
+CBP-0064673-03,Jorrit_Anticancer_Selleck,TG101348 (SAR302503),L17,B004,0,A
+CBP-0064674-04,Jorrit_Anticancer_Selleck,Trichostatin A (TSA),E06,B004,0,A
+CBP-0064676-03,Jorrit_Anticancer_Selleck,Tivozanib (AV-951),O10,B004,0,A
+CBP-0064679-03,Jorrit_Anticancer_Selleck,Torin 2,N19,B004,0,A
+CBP-0064680-04,Jorrit_Anticancer_Selleck,Tosedostat (CHR2797),C17,B004,0,A
+CBP-0064681-03,Jorrit_Anticancer_Selleck,TPCA-1,N20,B004,0,A
+CBP-0064683-03,Jorrit_Anticancer_Selleck,TW-37,H03,B004,0,A
+CBP-0064685-03,Jorrit_Anticancer_Selleck,Vandetanib (Zactima),G01,B004,0,A
+CBP-0064686-03,Jorrit_Anticancer_Selleck,Vemurafenib (PLX4032),F11,B004,0,A
+CBP-0064689-04,Jorrit_Anticancer_Selleck,Y-27632 2HCl,O02,B004,0,A
+CBP-0064690-02,Jorrit_Anticancer_Selleck,YM155,H05,B004,0,A
+CBP-0064691-03,Jorrit_Anticancer_Selleck,Vismodegib (GDC-0449),L01,B004,0,A
+CBP-0064692-03,Jorrit_Anticancer_Selleck,WAY-362450,E22,B004,0,A
+CBP-0064693-03,Jorrit_Anticancer_Selleck,WP1130,A21,B004,0,A
+CBP-0064694-03,Jorrit_Anticancer_Selleck,WYE-354,N10,B004,0,A
+CBP-0064695-03,Jorrit_Anticancer_Selleck,WZ4002,C11,B004,0,A
+CBP-0064696-04,Jorrit_Anticancer_Selleck,XAV-939,M07,B004,0,A
+CBP-0064697-03,Jorrit_Anticancer_Selleck,YM201636,J10,B004,0,A
+CBP-0064698-03,Jorrit_Anticancer_Selleck,YO-01027,B19,B004,0,A
+CBP-0064699-03,Jorrit_Anticancer_Selleck,Zibotentan (ZD4054),A17,B004,0,A
+CBP-0064700-03,Jorrit_Anticancer_Selleck,ZSTK474,B04,B004,0,A
+CBP-0064701-03,Jorrit_Anticancer_Selleck,"VX-680 (MK-0457, Tozasertib)",G02,B004,0,A
+CBP-0064775-03,Jorrit_Anticancer_Selleck,Lapatinib Ditosylate (Tykerb),K05,B004,0,A
+CBP-0064775-04,Jorrit_Anticancer_Selleck,Lapatinib,F15,B004,0,A
+CBP-0064777-03,Jorrit_Anticancer_Selleck,Regorafenib (BAY 73-4506),E07,B004,0,A
+CBP-0064779-03,Jorrit_Anticancer_Selleck,Pomalidomide,O12,B004,0,A
+CBP-0064785-02,Jorrit_Anticancer_Selleck,Dimesna,O09,B004,0,A
+CBP-0064786-02,Jorrit_Anticancer_Selleck,Brivanib (BMS-540215),D02,B004,0,A
+CBP-0064788-02,Jorrit_Anticancer_Selleck,JNJ-26481585,D06,B004,0,A
+CBP-0064790-02,Jorrit_Anticancer_Selleck,BTZ043 racemate,F01,B004,0,A
+CBP-0064801-02,Jorrit_Anticancer_Selleck,Ostarine (MK-2866),K11,B004,0,A
+CBP-0064804-02,Jorrit_Anticancer_Selleck,Bendamustine HCL,J07,B004,0,A
+CBP-0064805-02,Jorrit_Anticancer_Selleck,Nelarabine (Arranon),B08,B004,0,A
+CBP-0064807-02,Jorrit_Anticancer_Selleck,Fludarabine Phosphate (Fludara),L09,B004,0,A
+CBP-0064819-02,Jorrit_Anticancer_Selleck,Carmofur,P07,B004,0,A
+CBP-0064822-02,Jorrit_Anticancer_Selleck,D-glutamine,L14,B004,0,A
+CBP-0064825-02,Jorrit_Anticancer_Selleck,Fluvastatin sodium (Lescol),D16,B004,0,A
+CBP-0064832-02,Jorrit_Anticancer_Selleck,Ftorafur,H09,B004,0,A
+CBP-0064834-02,Jorrit_Anticancer_Selleck,Pamidronate Disodium,H11,B004,0,A
+CBP-0064842-02,Jorrit_Anticancer_Selleck,Rigosertib (ON-01910),I12,B004,0,A
+CBP-0064900-02,Jorrit_Anticancer_Selleck,DMXAA (ASA404),E15,B004,0,A
+CBP-0064951-02,Jorrit_Anticancer_Selleck,Sodium butyrate,F12,B004,0,A
+CBP-0065342-02,Jorrit_Anticancer_Selleck,Bexarotene,F14,B004,0,A
+CBP-0066197-02,Jorrit_Anticancer_Selleck,STF-62247,E04,B004,0,A
+CBP-0066390-02,Jorrit_Anticancer_Selleck,BMS-599626 (AC480),O04,B004,0,A
+CBP-0066393-02,Jorrit_Anticancer_Selleck,Cediranib (AZD2171),K01,B004,0,A
+CBP-0066395-02,Jorrit_Anticancer_Selleck,Masitinib (AB1010),B01,B004,0,A
+CBP-0066398-02,Jorrit_Anticancer_Selleck,AT9283,H06,B004,0,A
+CBP-0066413-02,Jorrit_Anticancer_Selleck,CI-1040 (PD184352),K02,B004,0,A
+CBP-0066415-02,Jorrit_Anticancer_Selleck,LY2228820,K15,B004,0,A
+CBP-0066426-02,Jorrit_Anticancer_Selleck,XL147,H02,B004,0,A
+CBP-0066427-02,Jorrit_Anticancer_Selleck,XL765 (SAR245409),E12,B004,0,A
+CBP-0066437-02,Jorrit_Anticancer_Selleck,OSI-420,P14,B004,0,A
+CBP-0066437-03,Jorrit_Anticancer_Selleck,Desmethyl Erlotinib (CP-473420),F21,B004,0,A
+CBP-0066513-01,Jorrit_Anticancer_Selleck,ABT-888 (Veliparib),I02,B004,0,A
+CBP-0066514-01,Jorrit_Anticancer_Selleck,Deforolimus (Ridaforolimus),K03,B004,0,A
+CBP-0066515-01,Jorrit_Anticancer_Selleck,Rapamycin (Sirolimus),E03,B004,0,A
+CBP-0066516-01,Jorrit_Anticancer_Selleck,Temsirolimus (Torisel),M05,B004,0,A
+CBP-0066517-01,Jorrit_Anticancer_Selleck,PHA-665752,J03,B004,0,A
+CBP-0066518-01,Jorrit_Anticancer_Selleck,SU11274,D01,B004,0,A
+CBP-0066519-01,Jorrit_Anticancer_Selleck,Linsitinib (OSI-906),D04,B004,0,A
+CBP-0066520-01,Jorrit_Anticancer_Selleck,GDC-0879,N02,B004,0,A
+CBP-0066521-01,Jorrit_Anticancer_Selleck,Triciribine (Triciribine phosphate),P01,B004,0,A
+CBP-0066522-01,Jorrit_Anticancer_Selleck,Everolimus (RAD001),P02,B004,0,A
+CBP-0066523-01,Jorrit_Anticancer_Selleck,Abiraterone (CB-7598),H04,B004,0,A
+CBP-0066524-01,Jorrit_Anticancer_Selleck,Pemetrexed (Alimta),I06,B004,0,A
+CBP-0066525-01,Jorrit_Anticancer_Selleck,17-AAG (Tanespimycin),I07,B004,0,A
+CBP-0066526-01,Jorrit_Anticancer_Selleck,17-DMAG HCl (Alvespimycin),A08,B004,0,A
+CBP-0066527-01,Jorrit_Anticancer_Selleck,Cyclopamine,A09,B004,0,A
+CBP-0066528-01,Jorrit_Anticancer_Selleck,Docetaxel (Taxotere),A10,B004,0,A
+CBP-0066529-01,Jorrit_Anticancer_Selleck,Gemcitabine HCl (Gemzar),I10,B004,0,A
+CBP-0066530-01,Jorrit_Anticancer_Selleck,Paclitaxel (Taxol),A11,B004,0,A
+CBP-0066531-01,Jorrit_Anticancer_Selleck,Capecitabine (Xeloda),C07,B004,0,A
+CBP-0066532-01,Jorrit_Anticancer_Selleck,Ganetespib (STA-9090),K07,B004,0,A
+CBP-0066533-01,Jorrit_Anticancer_Selleck,Aprepitant (MK-0869),E10,B004,0,A
+CBP-0066534-01,Jorrit_Anticancer_Selleck,Fulvestrant (Faslodex),E11,B004,0,A
+CBP-0066535-01,Jorrit_Anticancer_Selleck,Raltitrexed (Tomudex),M11,B004,0,A
+CBP-0066536-01,Jorrit_Anticancer_Selleck,Exemestane,O07,B004,0,A
+CBP-0066537-01,Jorrit_Anticancer_Selleck,Irinotecan,G08,B004,0,A
+CBP-0066538-01,Jorrit_Anticancer_Selleck,Doxorubicin (Adriamycin),G11,B004,0,A
+CBP-0066539-01,Jorrit_Anticancer_Selleck,Dacarbazine (DTIC-Dome),J11,B004,0,A
+CBP-0066540-01,Jorrit_Anticancer_Selleck,Epirubicin HCl,L06,B004,0,A
+CBP-0066541-01,Jorrit_Anticancer_Selleck,Oxaliplatin (Eloxatin),D07,B004,0,A
+CBP-0066542-01,Jorrit_Anticancer_Selleck,Etoposide (VP-16),L07,B004,0,A
+CBP-0066543-01,Jorrit_Anticancer_Selleck,Idarubicin HCl,D09,B004,0,A
+CBP-0066544-01,Jorrit_Anticancer_Selleck,2-Methoxyestradiol,L10,B004,0,A
+CBP-0066545-01,Jorrit_Anticancer_Selleck,Vincristine,F07,B004,0,A
+CBP-0066546-01,Jorrit_Anticancer_Selleck,Vinblastine,F08,B004,0,A
+CBP-0066547-01,Jorrit_Anticancer_Selleck,Epothilone A,H08,B004,0,A
+CBP-0066548-01,Jorrit_Anticancer_Selleck,Floxuridine (Fludara),P08,B004,0,A
+CBP-0066549-01,Jorrit_Anticancer_Selleck,Megestrol Acetate,H10,B004,0,A
+CBP-0066550-01,Jorrit_Anticancer_Selleck,Dexamethasone,A12,B004,0,A
+CBP-0066551-01,Jorrit_Anticancer_Selleck,Epothilone B (EPO906),A13,B004,0,A
+CBP-0066552-01,Jorrit_Anticancer_Selleck,Dorzolamide HCl,I13,B004,0,A
+CBP-0066553-01,Jorrit_Anticancer_Selleck,Isotretinoin,I14,B004,0,A
+CBP-0066554-01,Jorrit_Anticancer_Selleck,Doxercalciferol (Hectorol),C12,B004,0,A
+CBP-0066555-01,Jorrit_Anticancer_Selleck,Fludarabine (Fludara),C15,B004,0,A
+CBP-0066556-01,Jorrit_Anticancer_Selleck,Dapagliflozin,M16,B004,0,A
+CBP-0066557-01,Jorrit_Anticancer_Selleck,Prednisone (Adasone),G15,B004,0,A
+CBP-0066558-01,Jorrit_Anticancer_Selleck,Triamcinolone Acetonide,O15,B004,0,A
+CBP-0066559-01,Jorrit_Anticancer_Selleck,Cytarabine,G16,B004,0,A
+CBP-0066560-01,Jorrit_Anticancer_Selleck,Ezetimibe (Zetia),G17,B004,0,A
+CBP-0066561-01,Jorrit_Anticancer_Selleck,Estrone,B12,B004,0,A
+CBP-0066562-01,Jorrit_Anticancer_Selleck,Betapar (Meprednisone),J13,B004,0,A
+CBP-0066563-01,Jorrit_Anticancer_Selleck,Hydrocortisone (Cortisol),J14,B004,0,A
+CBP-0066564-01,Jorrit_Anticancer_Selleck,Estradiol,B15,B004,0,A
+CBP-0066565-01,Jorrit_Anticancer_Selleck,Azacitidine (Vidaza),D12,B004,0,A
+CBP-0066566-01,Jorrit_Anticancer_Selleck,Teniposide (Vumon),L12,B004,0,A
+CBP-0066567-01,Jorrit_Anticancer_Selleck,Simvastatin (Zocor),D13,B004,0,A
+CBP-0066568-01,Jorrit_Anticancer_Selleck,Vinpocetine (Cavinton),N14,B004,0,A
+CBP-0066569-01,Jorrit_Anticancer_Selleck,Formestane,P15,B004,0,A
+CBP-0066570-01,Jorrit_Anticancer_Selleck,SB590885,I17,B004,0,A
+CBP-0066571-01,Jorrit_Anticancer_Selleck,LY2157299,A19,B004,0,A
+CBP-0066572-01,Jorrit_Anticancer_Selleck,Cyclosporin A (Cyclosporine A),K18,B004,0,A
+CBP-0066573-01,Jorrit_Anticancer_Selleck,Salinomycin (Procoxacin),C20,B004,0,A
+CBP-0066574-01,Jorrit_Anticancer_Selleck,Itraconazole (Sporanox),H22,B004,0,A
+CBP-0066575-01,Jorrit_Anticancer_Selleck,Medroxyprogesterone acetate,E19,B004,0,A
+CBP-0066576-01,Jorrit_Anticancer_Selleck,Mifepristone (Mifeprex),E20,B004,0,A
+CBP-0066577-01,Jorrit_Anticancer_Selleck,GSK2126458,O18,B004,0,A
+CBP-0066578-01,Jorrit_Anticancer_Selleck,PCI-32765 (Ibrutinib),G21,B004,0,A
+CBP-0066579-01,Jorrit_Anticancer_Selleck,Geldanamycin,J19,B004,0,A
+CBP-0066580-01,Jorrit_Anticancer_Selleck,PF-03814735,J20,B004,0,A
+CBP-0066581-01,Jorrit_Anticancer_Selleck,"Tofacitinib (CP-690550, Tasocitinib)",B22,B004,0,A
+CBP-0066582-01,Jorrit_Anticancer_Selleck,Torin 1,N21,B004,0,A
+CBP-0066583-01,Jorrit_Anticancer_Selleck,Pazopanib,P18,B004,0,A
+CBP-0066584-01,Jorrit_Anticancer_Selleck,Daunorubicin HCl (Daunomycin HCl),H19,B004,0,A
+CBP-0066585-01,Jorrit_Anticancer_Selleck,Dexamethasone acetate,P19,B004,0,A
+CBP-0066586-01,Jorrit_Anticancer_Selleck,Triptolide,P20,B004,0,A

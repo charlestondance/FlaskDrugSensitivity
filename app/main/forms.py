@@ -1,5 +1,5 @@
 from flask.ext.wtf import Form
-from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextAreaField, IntegerField, SelectField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, TextAreaField, IntegerField, SelectField, FileField
 from wtforms.validators import Required, Length, Email, Regexp, EqualTo
 from wtforms import ValidationError
 from ..models import Role, User
@@ -89,4 +89,8 @@ class CombinationHitlist(Form):
 
     submit = SubmitField('Submit')
 
+class UploadCSVfile(Form):
+
+    compounds = FileField('Upload File', validators=[Required()])
+    submit = SubmitField('Submit')
 
