@@ -105,7 +105,14 @@ def hitlist():
             for x in output_list[1:]:
                 destination_barcodes.append(x[5])
                 #have to have two columns for export, barcode means nothing
-                destination_barcodes_for_out.append([x[5], "Barcode"])
+                destination_barcodes_for_out.append(x[5])
+
+            #make the barode list a set so it only has unique values
+            destination_barcodes_for_out_set = list(set(destination_barcodes))
+            print(destination_barcodes_for_out_set)
+            make_2dlist = []
+            for x in destination_barcodes_for_out_set:
+                make_2dlist.append([x, "Barcode"])
 
             destination_plates = (len(set(destination_barcodes)))
             #count the number of source plates
@@ -116,7 +123,7 @@ def hitlist():
             source_plates = (len(set(source_barcodes)))
 
 
-            output = excel.make_response_from_array(destination_barcodes_for_out, 'xls')
+            output = excel.make_response_from_array(make_2dlist, 'xls')
             output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + "_barcodes.xls"
             output.headers["Content-type"] = "text/csv"
             if destination_plates + source_plates > 84:
@@ -244,9 +251,10 @@ def uploadcsv():
         filename = secure_filename(form.compounds.data.filename)
         form.compounds.data.save("app/uploads/" + filename)
         filename_read = "app/uploads/" + filename
-        print(filename_read)
+
         CompoundDB().upload_csv(filename_read)
-        return "man"
+        flash('Database updated')
+        return redirect(url_for('main.index'))
 
     return render_template('uploadcsv.html', form=form)
 
