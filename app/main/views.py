@@ -126,8 +126,8 @@ def hitlist():
             output = excel.make_response_from_array(make_2dlist, 'xls')
             output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + "_barcodes.xls"
             output.headers["Content-type"] = "text/csv"
-            if destination_plates + source_plates > 84:
-                flash("WARNING, the number of plates exceed system capacity (84) for set " + form.name.data + ".")
+            if destination_plates + source_plates > 82:
+                flash("WARNING, the number of plates exceed system capacity (82) for set " + form.name.data + ".")
 
         flash("Done! " + form.name.data)
         return output
@@ -237,6 +237,7 @@ def combinationhitlist():
         output.headers["Content-Disposition"] = "attachment; filename=" + form.name.data + ".xls"
         output.headers["Content-type"] = "text/csv"
 
+        flash("Done! ")
         return output
 
     return render_template('combination_hitlist.html', form=form)
