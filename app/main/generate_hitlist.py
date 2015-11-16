@@ -54,7 +54,7 @@ def make_hitlist(hitlist, copies, name):
                 else:
                     barcode_offset = barcode_offset + 1
 
-                current_line_list = [compound[0], barcodes_list[barcode_offset], compound[2], volume_iterator, destination_wells_list[destination_well_iterator], name+"-"+dest_barcode_letter+str(dest_barcode)]
+                current_line_list = [compound[0], barcodes_list[barcode_offset], compound[2], volume_iterator, destination_wells_list[destination_well_iterator], name.upper()+"-"+dest_barcode_letter+str(dest_barcode)]
 
                 output_list.append(current_line_list)
 
@@ -72,11 +72,11 @@ def make_hitlist(hitlist, copies, name):
         for i in range(dest_barcode):
             for dmso in DMSO_WELLS:
                     #print('FIXED' + ", " + 'DMSO' + ", " + DMSO_SOURCE + ", " + '20' + ", " + dmso + ", " + dest_barcode_letter + str(i+1))
-                    current_line_list = ['DMSO', 'FIXED', DMSO_SOURCE[random.randint(0,15)], '25', dmso, name+"-"+dest_barcode_letter + str(i+1)]
+                    current_line_list = ['DMSO', 'FIXED', DMSO_SOURCE[random.randint(0,15)], '25', dmso, name.upper()+"-"+dest_barcode_letter + str(i+1)]
                     output_list.append(current_line_list)
             for control in CONTROL_WELLS:
                     #print('FIXED' + ", " + 'Control' + ", " + CONTROL_SOURCE + ", " + '20' + ", " + control + ", " + dest_barcode_letter + str(i+1))
-                    current_line_list = ['Control', 'FIXED', CONTROL_SOURCE[random.randint(0,15)], '25', control, name+"-"+dest_barcode_letter + str(i+1)]
+                    current_line_list = ['Control', 'FIXED', CONTROL_SOURCE[random.randint(0,15)], '25', control, name.upper()+"-"+dest_barcode_letter + str(i+1)]
                     output_list.append(current_line_list)
         #inrement the letter
         #print(dest_barcode_letter)
@@ -167,7 +167,7 @@ def combination_make_hitlist(hitlist1, hitlist2, copies, name):
                 else:
                     barcode_offset = barcode_offset + 1
 
-                current_line_list = [compound[0], barcodes_list[barcode_offset], compound[2], volume_iterator, destination_wells_list[destination_well_iterator], name+"-"+dest_barcode_letter+str(dest_barcode)]
+                current_line_list = [compound[0], barcodes_list[barcode_offset], compound[2], volume_iterator, destination_wells_list[destination_well_iterator], name.upper()+"-"+dest_barcode_letter+str(dest_barcode)]
 
                 output_list.append(current_line_list)
 
@@ -211,7 +211,7 @@ def combination_make_hitlist(hitlist1, hitlist2, copies, name):
                 else:
                     barcode_offset = barcode_offset + 1
 
-                current_line_list = [hitlist2[compound_counter][0], barcodes_list[barcode_offset], hitlist2[compound_counter][2], volume_iterator, destination_wells_list[destination_well_iterator], name+"-"+dest_barcode_letter+str(dest_barcode)]
+                current_line_list = [hitlist2[compound_counter][0], barcodes_list[barcode_offset], hitlist2[compound_counter][2], volume_iterator, destination_wells_list[destination_well_iterator], name.upper()+"-"+dest_barcode_letter+str(dest_barcode)]
 
                 output_list.append(current_line_list)
 
@@ -231,11 +231,11 @@ def combination_make_hitlist(hitlist1, hitlist2, copies, name):
         for i in range(dest_barcode):
             for dmso in DMSO_WELLS:
                     #print('FIXED' + ", " + 'DMSO' + ", " + DMSO_SOURCE + ", " + '20' + ", " + dmso + ", " + dest_barcode_letter + str(i+1))
-                    current_line_list = ['DMSO', 'FIXED', DMSO_SOURCE[random.randint(0,15)], '25', dmso, name+"-"+dest_barcode_letter + str(i+1)]
+                    current_line_list = ['DMSO', 'FIXED', DMSO_SOURCE[random.randint(0,15)], '25', dmso, name.upper()+"-"+dest_barcode_letter + str(i+1)]
                     output_list.append(current_line_list)
             for control in CONTROL_WELLS:
                     #print('FIXED' + ", " + 'Control' + ", " + CONTROL_SOURCE + ", " + '20' + ", " + control + ", " + dest_barcode_letter + str(i+1))
-                    current_line_list = ['Control', 'FIXED', CONTROL_SOURCE[random.randint(0,15)], '25', control, name+"-"+dest_barcode_letter + str(i+1)]
+                    current_line_list = ['Control', 'FIXED', CONTROL_SOURCE[random.randint(0,15)], '25', control, name.upper()+"-"+dest_barcode_letter + str(i+1)]
                     output_list.append(current_line_list)
         #inrement the letter
         #print(dest_barcode_letter)

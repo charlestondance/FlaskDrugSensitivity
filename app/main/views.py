@@ -202,7 +202,6 @@ def combinationhitlist():
     form = CombinationHitlist()
 
     if form.validate_on_submit():
-        flash("in validate! ")
 
         hitlist_store1 = (form.data['hitlist'])
         #split out the data into a list
